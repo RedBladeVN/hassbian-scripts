@@ -16,6 +16,7 @@ case "$1" in
         echo
         ;;
     "deploy_cert")
+        sudo systemctl restart home-assistant@homeassistant.service
         ;;
     "unchanged_cert")
         ;;
